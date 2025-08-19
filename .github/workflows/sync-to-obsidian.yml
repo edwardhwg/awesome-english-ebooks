@@ -102,7 +102,7 @@ jobs:
           
           if [ -d "${{ steps.economist.outputs.latest_dir }}" ]; then
             # 创建目标目录
-            TARGET_DIR="/mnt/webdav/外刊集合/经济学人/${{ steps.economist.outputs.date }}"
+            TARGET_DIR="/mnt/webdav/04_Archive/外刊集合/经济学人/${{ steps.economist.outputs.date }}"
             mkdir -p "$TARGET_DIR"
             
             # 只上传PDF文件
@@ -123,7 +123,7 @@ jobs:
         run: |
           if [ -d "${{ steps.newyorker.outputs.latest_dir }}" ]; then
             # 创建目标目录
-            TARGET_DIR="/mnt/webdav/外刊集合/纽约客/${{ steps.newyorker.outputs.date }}"
+            TARGET_DIR="/mnt/webdav/04_Archive/外刊集合/纽约客/${{ steps.newyorker.outputs.date }}"
             mkdir -p "$TARGET_DIR"
             
             # 只上传PDF文件
@@ -150,7 +150,7 @@ jobs:
               echo "找到最新的大西洋月刊目录: $LATEST_ATLANTIC_DIR，日期: $ATLANTIC_DATE"
               
               # 创建目标目录
-              TARGET_DIR="/mnt/webdav/外刊集合/大西洋月刊/$ATLANTIC_DATE"
+              TARGET_DIR="/mnt/webdav/04_Archive/外刊集合/大西洋月刊/$ATLANTIC_DATE"
               mkdir -p "$TARGET_DIR"
               
               # 只上传PDF文件
@@ -180,7 +180,7 @@ jobs:
               echo "找到最新的连线杂志目录: $LATEST_WIRED_DIR，日期: $WIRED_DATE"
               
               # 创建目标目录
-              TARGET_DIR="/mnt/webdav/外刊集合/连线杂志/$WIRED_DATE"
+              TARGET_DIR="/mnt/webdav/04_Archive/外刊集合/连线杂志/$WIRED_DATE"
               mkdir -p "$TARGET_DIR"
               
               # 只上传PDF文件
