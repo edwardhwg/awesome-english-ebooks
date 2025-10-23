@@ -118,7 +118,7 @@ jobs:
                 # 提取文件名
                 filename=$(basename "$file")
                 # 构建S3路径
-                s3_key="07_Archive/外刊/经济学人/${{ steps.economist.outputs.date }}/$filename"
+                s3_key="99_Archive/外刊/经济学人/${{ steps.economist.outputs.date }}/$filename"
                 
                 # 检查文件是否已存在
                 echo "检查R2中是否已存在文件: $s3_key"
@@ -152,7 +152,7 @@ jobs:
                 # 提取文件名
                 filename=$(basename "$file")
                 # 构建S3路径
-                s3_key="07_Archive/外刊/纽约客/${{ steps.newyorker.outputs.date }}/$filename"
+                s3_key="99_Archive/外刊/纽约客/${{ steps.newyorker.outputs.date }}/$filename"
                 
                 # 检查文件是否已存在
                 echo "检查R2中是否已存在文件: $s3_key"
@@ -192,7 +192,7 @@ jobs:
                   # 提取文件名
                   filename=$(basename "$file")
                   # 构建S3路径
-                  s3_key="07_Archive/外刊/大西洋月刊/$ATLANTIC_DATE/$filename"
+                  s3_key="99_Archive/外刊/大西洋月刊/$ATLANTIC_DATE/$filename"
                   
                   # 检查文件是否已存在
                   echo "检查R2中是否已存在文件: $s3_key"
@@ -235,7 +235,7 @@ jobs:
                   # 提取文件名
                   filename=$(basename "$file")
                   # 构建S3路径
-                  s3_key="07_Archive/外刊/连线杂志/$WIRED_DATE/$filename"
+                  s3_key="99_Archive/外刊/连线杂志/$WIRED_DATE/$filename"
                   
                   # 检查文件是否已存在
                   echo "检查R2中是否已存在文件: $s3_key"
